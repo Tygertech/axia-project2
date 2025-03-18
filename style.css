@@ -1,0 +1,787 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: rgba(38, 50, 56, 1);
+}
+ul{
+  list-style: none;
+}
+.checkbox, #check {
+  display: none;
+}
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+header nav {
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(245, 247, 250, 1);
+}
+.logo a .siteName {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.linksContainer {
+  width: fit-content;
+  padding-left: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.navLinks, .navBtn {
+  display: flex;
+  align-items: center;
+}
+.linksContainer .navLinks li {
+  padding: 0 25px;
+}
+.navBtn li a {
+  color: rgba(76, 175, 79, 1);
+}
+.navBtn .signUpBtn {
+  background-color: rgba(76, 175, 79, 1);
+  margin-left: 40px;
+  border-radius: 6px;
+}
+.navBtn .signUpBtn a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+.pageOne {
+  width: 100%;
+  display: flex;
+  padding: 80px 115px;
+  background-color: rgba(245, 247, 250, 1);
+  margin-top: 58px;
+}
+.pageOne article {
+  padding-top: 60px;
+}
+.pageOne article h1 {
+  font-size: 4rem;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 10px;
+}
+.pageOne article h1 span {
+  color: rgba(76, 175, 79, 1);
+}
+.pageOne article p {
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+.pageOne button {
+  color: #fff;
+  background-color: rgba(76, 175, 79, 1);
+  border: none;
+  border-radius: 5px;
+  padding: 14px 32px;
+  cursor: pointer;
+}
+.pageOne .image {
+  width: 350px;
+  margin-left: 150px;
+}
+.pageOne .image img {
+  width: 100%;
+}
+.pageTwo {
+  padding: 80px 115px;
+}
+.pageTwo .heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pageTwo .heading h1 {
+  font-size: 2.25rem;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 10px;
+}
+.pageTwo .heading p {
+  color: rgba(113, 113, 113, 1);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.pageTwo article {
+  display: flex;
+  justify-content: space-between;
+}
+.pageTwo article .card {
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 24px 32px;
+  box-shadow: 0 2px 4px 0 rgba(171, 190, 209, 0.2);
+
+}
+.pageTwo article .card div {
+  background-color: rgba(245, 247, 250, 1);
+  width: 65px;
+  height: 56px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 5px 20px 5px;
+  padding: 10px;
+}
+.pageTwo article .card h2 {
+  font-size: 1.75rem;
+  color: rgba(77, 77, 77, 1);
+  margin: 10px 0;
+}
+.pageTwo article .card p {
+  font-size: 1.1rem;
+  color: rgba(113, 113, 113, 1);
+}
+.pageThree, .pageFive {
+  width: 100%;
+  display: flex;
+  padding: 80px 115px;
+}
+.pageThree .page3Img, .page5Img {
+  width: 1000px;
+}
+.pageThree .page3Img img, .page5Img img  {
+  width: 100%;
+  height: 100%;
+}
+.pageThree article, .pageFive article {
+  padding: 40px 100px;
+}
+.pageThree article h1, .pageFive article h1 {
+  font-size: 2.25rem;
+  color: rgba(77, 77, 77, 1);
+  padding-right: 120px;
+  margin-bottom: 20px;
+}
+.pageThree article p, .pageFive article p {
+  font-size: 1.1rem;
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 20px;
+}
+.pageThree article button, .pageFive article button {
+  color: #fff;
+  background-color: rgba(76, 175, 79, 1);
+  border: none;
+  border-radius: 5px;
+  padding: 14px 32px;
+  cursor: pointer;
+}
+.pageFour {
+  display: flex;
+  align-items: center;
+  padding: 80px 115px;
+  background-color: rgba(245, 247, 250, 1);
+  gap: 200px;
+}
+.pageFour article h1 {
+  font-size: 2.25rem;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 10px;
+}
+.pageFour article h1 span {
+  color: rgba(76, 175, 79, 1);
+}
+.pageFour article p {
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.pageFour .numbers {
+  display: grid;
+  column-gap: 100px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.pageFour .numbers .numCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.numCard figure img{
+  width: 48px;
+  height: 48px;
+}
+.numCard aside h1 {
+  font-size: 1.75rem;
+  color: rgba(24, 25, 31, 1);
+}
+.numCard aside p {
+  font-size: 1.1rem;
+  color: rgba(113, 113, 113, 1);
+}
+.pageSix {
+  width: 100%;
+  display: flex;
+  padding: 40px 115px;
+  background-color: rgba(245, 247, 250, 1);
+  gap: 100px;
+}
+.pageSix .page6Img img {
+  width: 330px;
+}
+.pageSix article h2{
+  font-size: 1.25rem;
+  color: rgba(76, 175, 79, 1);
+  margin-bottom: 20px;
+}
+.pageSix article p{
+  font-size: 1.1rem;
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 20px;
+}
+.pageSix article .association{
+  font-size: 1rem;
+  color: rgba(137, 147, 158, 1);
+  margin-bottom: 20px;
+}
+.pageSix article .meetContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageSix article .meetContainer img {
+  width: 40px;
+}
+.pageSix article .meetContainer p, .meetContainer a {
+  color: rgba(76, 175, 79, 1);
+  margin-bottom: 0;
+}
+.page7 {
+  width: 100%;
+  padding: 50px 115px 100px;
+}
+.page7 .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page7 .heading h1 {
+  font-size: 2.25rem;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 10px;
+}
+.page7 .heading p {
+  font-size: 1.1rem;
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 10px;
+}
+.page7 article {
+  display: flex;
+  gap: 20px;
+}
+.page7 article .plate {
+  width: 368px;
+  height: 286px;
+  padding: 0 30px;
+  border-radius: 8px;
+}
+.page7 article .one {
+  background-image: url(media/image\ 18.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page7 article .two {
+  background-image: url(media/image\ 19.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page7 article .three {
+  background-image: url(media/image\ 20.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plate .inner {
+  margin-top: 210px;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(245, 247, 250, 1);
+  font-size: 1.25rem;
+  color: rgba(113, 113, 113, 1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0px rgba(171, 190, 209, 0.4);
+}
+.plate .inner p {
+  margin-bottom: 20px;
+}
+.plate .inner h4 a {
+  margin-top: 16px;
+  color: rgba(76, 175, 79, 1);
+}
+.page8 {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(245, 247, 250, 1);
+}
+.page8 h1 {
+  font-size: 4rem;
+  color: rgba(38, 50, 56, 1);
+  padding: 0 100px;
+  margin-bottom: 30px;
+}
+.page8 button {
+  color: #fff;
+  background-color: rgba(76, 175, 79, 1);
+  border: none;
+  border-radius: 5px;
+  padding: 14px 32px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 115px;
+  background-color: rgba(38, 50, 56, 1);
+}
+footer .socialLinks .logo a {
+  color: #fff;
+}
+footer .socialLinks p{
+  color: rgba(245, 247, 250, 1);
+  margin: 40px 0 50px;
+}
+footer .socialLinks .socials {
+  display: flex;
+  gap: 30px;
+}
+footer .socialLinks .socials i {
+  color: rgba(245, 247, 250, 1);
+  font-size: 1.5rem;
+}
+footer h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer ul li a{
+  color: rgba(245, 247, 250, 1);
+}
+footer input {
+  width: 255px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+      overflow-x: hidden;
+  }
+  header nav {
+    width: 100%;
+    padding: 20px;
+  }
+  .checkbox {
+      display: block;
+      color: #fff;
+  }
+  nav .checkbox i {
+      font-size: 2rem;
+      color: rgba(24, 25, 31, 1);
+      cursor: pointer;
+  }
+  .linksContainer {
+      position: absolute;
+      width: 250px;
+      height: 400px;
+      right: -100%;
+      top: 74px;
+      background-color:rgba(0, 0, 0, 0.7);
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 0 0 0 50px;
+  }
+  nav #check:checked~.linksContainer {
+      right: 0;
+      transition: 0.5s;
+  }
+  .linksContainer ul{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 0;
+      font-size: 1.3rem;
+  }
+  .linksContainer ul li a{
+    color: #fff;
+  }
+  .navBtn .signUpBtn {
+    margin-left: 0;
+  }
+  .pageOne {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .pageOne article {
+    padding: 30px 0 50px;
+  }
+  .pageOne article h1 {
+    font-size: 2.5rem;
+  }
+  .pageOne article p {
+    font-size: 1rem;
+  }
+  .pageOne .image {
+    margin: auto;
+  }
+  .pageTwo {
+    padding: 50px 20px;
+  }
+  .pageTwo .heading h1 {
+    font-size: 1.8rem;
+    
+  }
+  .pageTwo .heading p {
+    font-size: 1rem;
+  }
+  .pageTwo article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pageThree, .pageFive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .pageThree .page3Img, .page5Img {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  .pageThree article, .pageFive article {
+    padding: 0;
+    text-align: center;
+  }
+  .pageThree article h1 {
+    font-size: 1.8rem;
+    padding-right: 0;
+  }
+ .pageFive article h1 {
+    font-size: 1.6rem;
+    padding-right: 0;
+  }
+  .pageThree article p, .pageFive article p {
+    font-size: 1rem;
+  }
+  .pageFour {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 10px;
+  }
+  .pageFour article h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .pageFour .numbers {
+    column-gap: 40px;
+  }
+  .pageFour .numbers .numCard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .numCard aside h1 {
+    font-size: 1.5rem;
+  }
+  .pageSix {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .pageSix article .meetContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pageSix article .meetContainer img {
+    width: 40px;
+  }
+  .page7 {
+    width: 100%;
+    padding: 50px 20px 100px;
+  }
+  .page7 article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+  .page8 h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 50px 30px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+}
+header nav {
+  width: 100%;
+  padding: 20px 50px;
+}
+.checkbox {
+    display: block;
+    color: #fff;
+}
+nav .checkbox i {
+    font-size: 2rem;
+    color: rgba(24, 25, 31, 1);
+    cursor: pointer;
+}
+.linksContainer {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    right: -100%;
+    top: 74px;
+    background-color:rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 0 50px;
+}
+nav #check:checked~.linksContainer {
+    right: 0;
+    transition: 0.5s;
+}
+.linksContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    font-size: 1.3rem;
+}
+.linksContainer ul li a{
+  color: #fff;
+}
+.navBtn .signUpBtn {
+  margin-left: 0;
+}
+.pageOne {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  margin-top: 58px;
+}
+.pageOne article {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.pageOne .image {
+  margin: auto;
+}
+.pageTwo {
+  padding: 50px;
+}
+.pageTwo article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.pageThree, .pageFive {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 50px;
+  text-align: center;
+}
+.pageThree .page3Img, .page5Img {
+  width: 350px;
+  margin: auto;
+}
+.page5Img {
+  margin-bottom: 30px;
+}
+.pageThree article, .pageFive article {
+  padding: 0;
+}
+.pageThree article h1, .pageFive article h1 {
+  padding-right: 0;
+}
+.pageFour {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 10px;
+}
+.pageFour .numbers {
+  display: grid;
+  column-gap: 50px;
+}
+.pageSix {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+ text-align: center;
+  gap: 20px;
+}
+.pageSix article .meetContainer{
+  display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+  align-items: center;
+}
+.page7 {
+  width: 100%;
+  padding: 50px 50px 100px;
+}
+.page7 article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.page8 {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(245, 247, 250, 1);
+}
+.page8 h1 {
+  font-size: 3rem;
+  padding: 0;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 30px;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  body{
+    overflow-x: hidden;
+}
+header nav {
+  width: 100%;
+  padding: 20px 50px;
+}
+.checkbox {
+    display: block;
+    color: #fff;
+}
+nav .checkbox i {
+    font-size: 2rem;
+    color: rgba(24, 25, 31, 1);
+    cursor: pointer;
+}
+.linksContainer {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    right: -100%;
+    top: 74px;
+    background-color:rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 0 50px;
+}
+nav #check:checked~.linksContainer {
+    right: 0;
+    transition: 0.5s;
+}
+.linksContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    font-size: 1.3rem;
+}
+.linksContainer ul li a{
+  color: #fff;
+}
+.navBtn .signUpBtn {
+  margin-left: 0;
+}
+.pageOne {
+  width: 100%;
+  padding: 50px;
+  
+}
+.pageTwo {
+  padding: 50px;
+}
+.pageTwo article {
+  display: flex;
+ 
+  justify-content: center;
+  gap: 20px;
+}
+.pageThree, .pageFive {
+  width: 100%;
+  padding: 50px;
+}
+.pageFour {
+  padding: 50px;
+  gap: 70px;
+}
+.pageSix {
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  background-color: rgba(245, 247, 250, 1);
+  gap: 100px;
+}
+.page7 {
+  width: 100%;
+  padding: 50px 50px 150px;
+}
+.page7 article {
+  display: flex;
+  gap: 10px;
+}
+}
